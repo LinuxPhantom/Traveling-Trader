@@ -1,3 +1,4 @@
+
 # TravelingTrader Mod for DayZ
 
 Welcome to the **TravelingTrader** mod repository, crafted by **LinuxPhantom**. This mod introduces dynamic traders that rotate between predefined positions in your DayZ server, offering an engaging and unpredictable experience for players.
@@ -34,9 +35,41 @@ Welcome to the **TravelingTrader** mod repository, crafted by **LinuxPhantom**. 
 
 Below is an example `config.json`:
 
+
 ```json
 {
     "RTTraderData": [
+        {
+            "ID": 0,
+            "MoveTime": 1800000,
+            "MoveMessage": "The Trader Has Moved",
+            "Position": [                        /* List of positions the trader rotates to */
+                "3699.27 402.13 5967.91",        /* Initial position at Green Mountain */
+                "8354.06 293.143 5995.87"        /* Position at Kumyrna */
+            ],
+            "Orientation": [                      /* List of orientations the trader takes at each position */
+                "-13.234265 0 0",                /* Initial orientation at Green Mountain */
+                "0 0 0"                          /* Orientation at Kumyrna */
+            ]
+        },
+        {
+            "ID": 1,
+            "MoveTime": 1800000,
+            "MoveMessage": "The Trader Has Moved",
+            "Position": [                        
+                "3691.41 402.074 5998.47",       
+                "8357.55 293.143 5995.26"        
+            ],
+            "Orientation": [                      
+                "158.253525 0 0",               
+                "-169.334961 0 0"                
+            ]
+        }
+    ]
+}
+```
+## How It Should Look!
+```
         {
             "ID": 0,
             "MoveTime": 1800000,
@@ -64,7 +97,7 @@ Below is an example `config.json`:
             ]
         }
     ]
-}
+} 
 ```
 
 ## Join Our Discord
@@ -77,5 +110,4 @@ This mod is the property of **LinuxPhantom**. Unauthorized distribution, modific
 
 ---
 
-Crafted with :heart: by [LinuxPhantom](https://github.com/LinuxPhantom/Traveling-Trader).
-
+Crafted with :heart: by [LinuxPhantom](https://github.com/YOUR_GITHUB_USERNAME).
